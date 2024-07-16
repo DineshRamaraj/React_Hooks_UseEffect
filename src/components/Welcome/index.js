@@ -1,13 +1,18 @@
-import {useState, useEffect} from 'react'
+import {useEffect} from 'react'
 
-const add = (a, b) => {
-  useEffect(() => {
-    document.title = 'Dineshkumar'
-  })
-  return a + b
-}
+const add = (a, b) => return a + b
 
-const Welcome = () => {
+useEffect(() => {
+    document.title = "Dineshkumar"
+})
+
+// const add = (a, b) => {
+//   useEffect(() => {
+//     document.title = 'Dineshkumar'
+//   })
+//   return a + b
+// }
+
   //   if (true) {
   //     const [name, setName] = useState(0)
   //   }
@@ -17,6 +22,8 @@ const Welcome = () => {
   //     })
   //   }
   //   return <div>Welcome</div>
+
+const Welcome = () => {
   return <div>{add(1, 2)}</div>
 }
 
